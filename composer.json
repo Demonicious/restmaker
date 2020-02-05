@@ -1,0 +1,14 @@
+{
+    "name": "demonicious/php-api",
+    "description": "An Easy RESTful JSON API framework.",
+    "type": "framework",
+    "authors": [
+        {
+            "name": "Mudassar Islam",
+            "email": "demoncious@gmail.com"
+        }
+    ],
+    "require": {
+        "nikic/fast-route": "^1.3"
+    }
+}
