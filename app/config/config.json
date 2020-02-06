@@ -1,0 +1,5 @@
+{
+    "apis_path": "app/api",
+    "env": "development",
+    "hide_script": false
+}
