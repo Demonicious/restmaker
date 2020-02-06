@@ -1,5 +1,20 @@
 <?php
 
+class ErrorReporter {
+    public function emitBadRequest($method, $uri) {
+        $contents = file_get_contents(__DIR__.'/view/bad_request_err.html');
+        $contents = str_replace('{METHOD}', $method, $contents);
+        $contents = str_replace('{URI}', $uri, $contents);
+        die($contents);
+    }
+    public function emitNotFound($method, $uri) {
+        $contents = file_get_contents(__DIR__.'/view/not_found_err.html');
+        $contents = str_replace('{METHOD}', $method, $contents);
+        $contents = str_replace('{URI}', $uri, $contents);
+        die($contents);
+    }
+}
+
 class API_Method {
     public $group = '';
     public $route = '';
